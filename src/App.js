@@ -12,6 +12,11 @@ export default class App extends Component {
   ]
 
 
+  handleDelete = (id) => {
+   const newExpense = this.initialExpenses.filter(expense => expense.id !== id)
+  
+  }
+
   render() {
     return(
       <main className="main-container">
