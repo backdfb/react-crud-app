@@ -3,14 +3,15 @@ import './ExpenseList.css'
 import ExpenseItem from './ExpenseItem'
 import { MdReplayCircleFilled } from 'react-icons/md'
 
-const ExpenseList = ({initialExpenses, handleDelete}) => {
+const ExpenseList = (props) => {
   return (
     <>
     <ul className='list'>
-            {initialExpenses.map(expense => {
+            {props.initialExpenses.map((expense) => {
                 return (
-                    <ExpenseItem key={expense.id} expense={expense} 
-                        handleDelete={handleDelete}
+                    <ExpenseItem key={expense.id} 
+                    expense={expense} 
+                    handleDelete={props.handleDelete}
                     />
                 )
             })}
@@ -22,4 +23,4 @@ const ExpenseList = ({initialExpenses, handleDelete}) => {
   )
 }
 
-export default ExpenseList
+export default ExpenseList;

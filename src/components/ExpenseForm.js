@@ -33,8 +33,8 @@ const ExpenseForm = ({ charge, handleCharge, amount, handleAmount, handleSubmit 
             제출
         </button>
       </form>
-    )
-  }
+    );
+  };
 
   export  default ExpenseForm;
 
