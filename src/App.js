@@ -16,7 +16,7 @@ const App = () => {
 
   const handleCharge = (e) => {
    setCharge(e.target.value); 
-  }
+  } 
 
   const handleAmount = (e) => {
     setAmount(e.target.valueAsNumber);
@@ -35,7 +35,7 @@ const App = () => {
       const newExpenses = [...expenses, newExpense];
       setExpenses(newExpenses);
       setCharge("");
-      setAmount(0);
+      setAmount(0); 
     } else {
       console.error('error');
     }
